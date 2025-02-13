@@ -1,0 +1,11 @@
+#compdef ask
+
+local -a commands
+commands=(
+    "--reindex[Rebuild knowledge base index]"
+    "--chat[Start interactive chat]"
+)
+
+_arguments -C \
+    $commands \
+    '*:: :->args' && return
